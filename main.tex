@@ -1,0 +1,137 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{a4wide}
+%\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}  
+\usepackage[french,english]{babel}
+\usepackage{amsmath,amssymb,here}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[final]{pdfpages} 
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{pdfpages}
+\usepackage{color}
+\usepackage{eurosym}
+\usepackage{titlesec} 
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+%%% Use the package for UMONS cover page
+%% the option describe the faculty you belong to
+%% e.g. fpms, fs, ...
+\usepackage[fpms]{umons-coverpage}
+
+%%% Give the relevant pieces of information
+%% Your name
+\umonsAuthor{ \\ \textbf{Mahmoud} \textsc{\textbf{NANI}} \\ }
+%% The main title of your thesis
+\umonsTitle{------------------}
+%% The sub-title of your thesis
+\umonsSubtitle{\textbf{--------------------------------}}
+%% The type of document: the reason of the thesis
+\umonsDocumentType{}
+%% Your supervisor(s)
+\umonsSupervisor{Sous la direction du Professeur\\  \textbf{----------}}
+%% The date (or academic year)
+\umonsDate{June 2019 ---------}
+
+
+%% NOTE: if you compile with LaTeX, the figures should by in EPS (Encapsulated Postscript)
+%%       if you compile with pdfLaTeX, figures can be in PDF, JPG, PNG, ...
+
+
+% References Addition
+\usepackage[backend=bibtex,
+style=numeric,
+bibencoding=ascii,
+maxbibnames=99,
+sorting=none
+%style=alphabetic
+%style=reading
+]{biblatex}
+\addbibresource{references.bib}
+
+%%\titleformat{\section}[runin]
+%%  {\normalfont\large\bfseries}{\thesection}{1em}{}
+
+\graphicspath{ {./images/} }
+
+
+\begin{document}
+
+% To expand the word spacing
+\spaceskip=1.5\fontdimen2\font plus 1.5\fontdimen3\font
+minus 1.5\fontdimen4\font
+
+%% Ask for a regular cover page with full content and default picture
+\umonsCoverPage
+
+%% Ask for a reduced cover page (i.e. without picture)
+%\umonsCoverPage*
+
+
+\clearpage
+%%\pagenumbering{roman}
+%%\fontsize{12pt}{12pt}\selectfont
+%%\onehalfspacing
+%%\addtocontents{toc}{\textbf{Title}\hfill\textbf{Page No.}\par}
+\input{abstract}
+
+%% Table des matiÃ¨res
+\tableofcontents
+%\chapter{Annexe}
+%\section{Support de Présentation}
+
+
+\input{Chapter1.tex}
+\input{Chapter2.tex}
+\input{Chapter3.tex}
+
+
+
+
+
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+
+
+% Change Bibliography to References
+\renewcommand\bibname{REFERENCES}
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{REFERENCES}
+\printbibliography
+
+
+
+
+\end{document}
+
+Prediction goals:  recommendation systems:
+==========================================
+Prediction(recommendation) is important in business process intelligence domain while day a day process running for a new applicant, this case will be evaluated by the employee as a single case without taking in account the history of similar cases. In addition, since recently hired employees do not have experience and do not understand obviously already completed case. For this reason, a prediction system would be crucial, and the profile of each case would be taken into consideration to predict a given incomplete running case.
+
+
+
+
+
+Case study analysis:
+Bank's loan process was proposed as case a study in BPIC 2017 from Dutch financial institute in The Netherlands. In such cases, certain problematics in the way how the process perform, process down time and interacting with client are challenging.
+Precisely, the first question, the throughput times per part of the process,  in particular the difference between the time spent in the company's systems waiting for processing by a user and the time spent waiting on input from the applicant as this is currently unclear.(1) https://www.win.tue.nl/bpi/doku.php?id=2017:challenge
+In this thesis, we will consider reports submitted from the student category.
+To understand the process presented in the challenge is it useful to structure the schema in mind as follow: An application is submitted. Then, some automatic checks are performed, then generate the suitable offer to client. This offer could be sent by online or by mail. A phone discussion then is made with client about this offer and waiting him/her to confirm the offer and send additional documents and information is needed. When receiving, a validation phase to assess offer is mandatory. In case of incomplete application or missing information, the financial institute will again contact the client to add them. When completion, A series of checks should be performed after which the verdict of application is made.
+
+Winner:
+The intention for the analysis was to measure the effectiveness of system by analyzing its downtime and the density of interaction with clients.
+ 
+
+NOTES:
+1.	Thanks to Start timestamp and Complete timestamp to allow calculating execution time
+2.	a snippet of the table
+3.	our event log is a complete table in term of sparsity, since there is no sparse in case information. In contrary, there is not an important number of features / attributes for a case (4 columns), the rest of columns are event attributes that we called it meta event data not been taken in account while classifying.
+4.	Textual methods Doc2vec: ScaleAbout current model uses tagging mechanism to tag the videos and the articles (“topic modeling”) and measuring distance between tags.
+5.	Business process monitoring is concerned with the analysis of events produced during the execution of a process in order to assess the fulfillment of its compliance requirements and performance objectives

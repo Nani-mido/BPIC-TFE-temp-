@@ -1,0 +1,31 @@
+\clearpage
+\chapter{Preliminaries}
+\\ 
+
+We are interested in introducing some basics of process mining assumptions to express terms involved in this study.
+The definition of activity, case, log and prefix have been defined in many papers, but we will take in account the definition by B.F. van Dongen, R.A. Crooy, and W.M.P. van der Aalst in \cite{cycletimeprediction}.
+However, we will deviate in a term of Variant which is not elaborated, as follows:
+\\
+
+Let A be a set of activities, let $W$ be a log over $A$, let $K$ be a set of attribute keys and let $ \sigma \in W$ be a case. Let $V  \subseteq W $ be a process variant.
+
+\textbf{2.1\textit{ Activity:}} 
+It is the event performed by a user or by an entity in the system. As an example, the call-centre employee can make a phone call to client as well as the system can schedule the call and register this as an event.
+
+\textbf{2.2\textit{ Case:}} 
+A list succession of events that occurred during
+a process flow.
+
+\textbf{2.3\textit{ Log:}}   
+The information typically captured from running process is saved as a log. An event log contains information about activities executed for specific cases and especially their duration.
+
+\textbf{2.4\textit{ Variant:}}  As a citation form fluxicon\footnote{ https://fluxicon.com/} team we aim to clarify variant as follow: "Process variants are about variation in the process flow: A process variant is a unique path from the very beginning to the very end of the process. In other words, a process variant is a specific activity sequence, like a “trace” through the process, from start to end."\footnote{ https://fluxicon.com/blog/2012/11/how-to-understand-the-variants-in-your-process}
+
+Accordingly, we denote process variant $V \subseteq W: A \in \sigma $ for all $\sigma \in V$.
+
+\textbf{2.5\textit{ Prefix:}}  Let $\downarrow 0,n (\sigma)$ be a trace prefix of length $n$ (i.e. first $n$ activities of the case)
+
+
+\textbf{2.6\textit{ Process Model:}}
+
+\textbf{2.7\textit{ Conformance Checking:}}
